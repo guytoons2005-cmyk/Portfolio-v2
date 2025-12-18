@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets PPE - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <img src="images/logo_polesup.png" alt="Logo" class="logo">
+        <h1>Bosveil Bishop</h1>
+        <p>BTS SIO - Option SISR</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="bts-sio.html">Le BTS SIO</a></li>
+            <li><a href="projets.html" class="active">Projets PPE</a></li>
+            <li><a href="stages.html">Stages</a></li>
+            <li><a href="veille.html">Veille Techno</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Section Projets PPE -->
+        <section>
+            <h2>Projets Réalisés (PPE)</h2>
+
+            <!-- PROJET 1 - DUPLIQUER cette structure pour chaque projet -->
+            <div class="projet-card">
+                <h3>Déploiement d'une infrastructure réseaux en suivant un cahier des charges</h3>
+                
+                <div class="info-label">Contexte</div>
+                <p>Dans le cadre du projet Infrastructure E6, l'objectif est de concevoir et déployer l'architecture informatique d'une nouvelle entité destinée à devenir autonome à long terme. 
+                    Le réseau doit s'intégrer à l'infrastructure existante de l'entreprise mère via un routage statique (sans NAT) en utilisant le réseau fourni par le responsable et la passerelle 10.21.3.1. L'organisation initiale comprend 10 collaborateurs répartis en trois services (Direction, Commercial, Production) 
+                    et deux catégories de sécurité (VIP et Employés).</p>
+
+                <div class="info-label">Objectifs</div>
+                <br>
+                <p> <li>Indépendance technique : Créer une infrastructure complète incluant Active Directory, DNS, DHCP, NTP et DFS.</li>
+                    <br>
+                    - Segmentation réseau : Mettre en place 4 plages réseaux distinctes (Serveurs, DMZ, LAN, et un VLAN en attente) avec gestion de l'inter-  VLAN.
+                    <br>
+                    
+                    -   Sécurisation des flux : Configurer un firewall pour isoler la DMZ tout en autorisant les flux Web (80/443) et l'administration distante.
+                    <br> 
+                    - Gestion centralisée : Appliquer les bonnes pratiques système via des GPO (sécurisation USB, messages d'accueil personnalisés, lecteurs réseaux).
+                </p>
+
+                <div class="info-label">Travail Réalisé</div>
+                <p> - Conception réseau : Découpage d’une plage IP en 4 sous-réseaux (VLANs) et configuration d’un routage statique 
+                    vers la passerelle 10.21.3.1 pour assurer l'interconnexion WAN sans NAT. 
+                
+                
+                </p>
+
+                <div class="info-label">Outils et Technologies</div>
+                <div class="tags">
+                    <span class="tag">Switch Cisco, Routeur Cisco</span>
+                    <span class="tag">Windows Server 2019/2022 (AD, DFS, GPO), Linux (Serveur Web, Zabbix).</span>
+                    <span class="tag">VLANs, Routage statique, ACLs/Firewalls   </span>
+                    
+                    <!-- REMPLACER : Ajoutez vos technologies -->
+                </div>
+
+                <div class="info-label">Compétences Mobilisées</div>
+                <p>C1, C4, C5 </p>
+
+                <div class="info-label">Résultats Obtenus</div>
+                <!-- REMPLACER : Ajoutez vos captures d'écran -->
+                <img src="images/Capture-projet1.png" alt="Capture du projet" class="screenshot">
+                <p> Les résultats obtenus sont : <strong>une infrastructure fonctionnelle</strong> permettant l'accès internet depuis le
+                    poste client via le routage statique fait par Kevin et moi,
+                    mais aussi une bonne structure des UOs selon le modèle AGDLP pour la gestion des droits.
+                <br> 
+                    Au niveau de la DMZ, l'isolement est conforme aux exigences de sécurité, autorisant uniquement des flux
+                    spécifiques, au début du projet on a aussi désactiver les ports pour les non vip.
+
+                
+                
+                </p>
+
+                <div class="info-label">Bilan Personnel</div>
+                <p>Le projet m'a permis de comprendre l'importance d'une planification théorique rigoureuse (adressage, schéma) 
+                    avant toute mise en pratique. La principale difficulté a résidé dans la configuration des UOs et GPOS
+                    lors de l'étape de l'Active Directory mais au final je pense qu'en prenant en compte nos forces on ne s'est
+                    pas si mal débrouiller que ça, au final c'est le résultat qui compte.
+            
+                
+                
+                
+                </p>
+            </div>
+
+        
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Portfolio BTS SIO - Bosveil Bishop/p>
+        <p>Contact : bishopokwudili53@gmail.com</p>
+    </footer>
+</body>
+</html>
